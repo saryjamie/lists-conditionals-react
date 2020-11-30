@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
+import Validation from "./Validation/Validation";
 
 class App extends Component {
   state = {
@@ -19,6 +20,8 @@ class App extends Component {
           value={this.state.userInput}
         ></input>
         <p>{this.state.userInput}</p>
+
+        <hr />
         <ol>
           <li>
             Create an input field (in App component) with a change listener
