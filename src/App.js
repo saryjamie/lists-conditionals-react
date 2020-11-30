@@ -4,7 +4,7 @@ import Validation from "./Validation/Validation";
 
 class App extends Component {
   state = {
-    usetInput: "",
+    userInput: "",
   };
 
   changeHandler = (event) => {
@@ -20,6 +20,7 @@ class App extends Component {
           value={this.state.userInput}
         ></input>
         <p>{this.state.userInput}</p>
+        <Validation inputLength={this.state.userInput.length} />
 
         <hr />
         <ol>
