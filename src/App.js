@@ -18,10 +18,7 @@ class App extends Component {
           onChange={this.changeHandler}
           value={this.state.userInput}
         ></input>
-        <p>
-          {" "}
-          {} has {} letters
-        </p>
+        <p>{this.state.userInput}</p>
         <ol>
           <li>
             Create an input field (in App component) with a change listener
