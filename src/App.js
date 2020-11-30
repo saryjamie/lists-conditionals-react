@@ -13,7 +13,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <input type="text" onChange={this.changeHandler}></input>
+        <input
+          type="text"
+          onChange={this.changeHandler}
+          value={this.state.userInput}
+        ></input>
         <p>
           {" "}
           {} has {} letters
