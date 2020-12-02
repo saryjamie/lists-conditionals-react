@@ -1,14 +1,11 @@
 import React from "react";
 
 const validation = (props) => {
-  return (
-    <div>
-      {props.inputLength > 5 ? (
-        <p>Text long enough!</p>
-      ) : (
-        <p>Text is too short!</p>
-      )}
-    </div>
-  );
+  let validationMessage = "Text is long enough!";
+  if (props.inputLength <= 5) {
+    validationMessage = "Text is too short!";
+  }
+
+  return <div>{validationMessage}</div>;
 };
 export default validation;
